@@ -19,9 +19,9 @@ const callbacks = [
                 ["vertical", (a, b) => a.x * 0xfffff + a.y - b.x * 0xfffff - b.y],
                 ["random", () => 1 - Math.random() * 2]
             ];
-            const answer = prompt(`Change your drawing style (Default is Circular):
+            const answer = a.prompt(`Change your drawing style (Default is Circular):
             Your options are:
-            ${styles.map(a => a[0]).join('\n')}
+${styles.map(a => a[0]).join('\n')}
             To change your drawing style, type in the style you want.
             If you leave this empty, your drawing style will be reverted to circular`).toLowerCase();
             const style = styles.find(a => a[0] === answer);
@@ -36,7 +36,7 @@ a.Pixelplace = {
     Settings: {},
     createSetting: function (name, description, callback) {
         a.addEventListener('load', () => {
-            const form = document.getElementById('form-tools');
+            const form = a.document.getElementById('form-tools');
             form.insertAdjacentHTML('beforeend', `<a href="#" class="input-checkbox" data-name="tools-${name.toLowerCase()}">
                         <div>
                             <div class="input">
@@ -48,7 +48,7 @@ a.Pixelplace = {
                             <div class="content">${description}</div>
                         </div>
                     </a>`)
-        })
+        });
         a.Pixelplace.Settings['tools-' + name.toLowerCase()] = {
             name: name,
             callback: function () {
