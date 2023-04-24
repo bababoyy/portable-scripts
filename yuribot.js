@@ -1,16 +1,14 @@
 const scripts = [
-    "https://greasyfork.org/scripts/461063-mxo-li-brary/code/MXO%20L%C4%B0BRARY.js?version=1158484",
-    "https://greasyfork.org/scripts/461221-mxobot-hacktimer-js-by-turuslan/code/MxoBot%20HackTimerjs%20By%20Turuslan.js?version=1157401",
-    "https://greasyfork.org/scripts/459915-mxo-bot/code/Mxo%20bot.user.js",
+    "https://jsdelivr.net/gh/bababoyy/cdn-files@main/yuribot.user.js",
 ];
 var a = window.open(location.href);
 a.unsafeWindow = a;
 a.GM = {
     info: {
         script: {
-            namespace: "https://i.imgur.com/gLazoQg.png"
+            namespace: "Pinkerton_is_the_best_album"
         },
-        namespace: "https://i.imgur.com/gLazoQg.png"
+        namespace: "Pinkerton_is_the_best_album"
     }
 };
 a.document.title = 'PPClient Portable'
